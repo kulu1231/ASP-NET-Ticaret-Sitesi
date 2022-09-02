@@ -1,0 +1,421 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="kullanicisablon.master.cs" Inherits="ticaretsitesi.kullanicisablon" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"/> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<link rel="shortcut icon" href="../images/logo2.ico" />
+    <script type="text/javascript">
+        function satinal()
+        {
+            document.getElementById("sepetform").style.display="block";
+        }
+        </script>
+    <style type="text/css">
+       
+*
+{
+	font-family:Arial, Helvetica, sans-serif;
+	padding:0px;
+	margin:0px;
+}
+#kapsayici {
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height:auto;
+	z-index: 1;
+}
+#satinal {
+	position: absolute;
+	width: 600px;
+	height: 708px;
+	z-index: 2;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+	left: 891px;
+	top: 0px;
+	background-color: #FFFFFF;
+	display:none;
+}
+.ustbanner {
+	position:fixed;
+	width: 100%;
+	height: 150px;
+	z-index: 1000;
+	background-color: #FFFFFF;
+	border-bottom:1px solid #000;
+	top:0px;
+}
+#kate {
+	position: relative;
+	width: 274px;
+	height: 528px;
+	z-index: 2;
+	left: 20px;
+	top: 30px;
+	background-color: #FFFFFF;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#kate ul
+{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+
+#kate ul li a
+{
+	display:block;
+	color:black;
+	text-decoration:none;
+	font-size:18px;
+	width:274px;
+	font-family:Arial, Helvetica, sans-serif;
+	height:44px;
+	text-align:center;
+	line-height:44px;
+	background-color:#FFF;
+	
+	
+}
+#kate ul li a:hover
+{
+	background-color:#f49140;
+	color:white;	
+}
+#icerik2 img:hover
+{
+	  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.1);
+  opacity: 1;
+	
+	
+}
+#icerik2 {
+	position: relative;
+	width: 1100px;
+	height: auto;
+	z-index: 2;
+	left: 305px;
+	top:-495px;
+	background-color: #FFFFFF;
+	float: left;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+.menu {
+	position: absolute;
+	width: 773px;
+	height: 44px;
+	z-index: 1000;
+	left: 40%;
+	top: 80px;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+	background-color: #FFFFFF;
+}
+.logo {
+	position: absolute;
+	width: 681px;
+	height: 141px;
+	z-index: 20;
+	left: 36px;
+	top: 4px;
+	color: #f49140;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	line-height: 10px;
+}
+#icerik {
+	position: relative;
+	width: 100%;
+	height: auto;
+	z-index: 3;
+	top: 152px;
+	background-color: #FFFFFF;
+}
+#footer {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	z-index: 2;
+	top: auto;
+	background-color: #3A485B;
+	text-align: center;
+	font-size: 36px;
+	line-height: 50px;
+	color:#FFFFFF;
+    float:right;
+
+}
+#footer2 {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	z-index: 2;
+	top: auto;
+	background-color: #666666;
+    float:right;
+
+}
+#slid {
+	position: relative;
+	margin: auto;
+	width: 1010px;
+	height: 115px;
+	z-index: 2;
+	background-color: #00FF00;
+	left: -160px;
+	line-height:100px;
+	font-size:60px;
+	text-align:center;
+}
+.menu ul
+{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+.menu ul li
+{
+	float:left;
+}
+.menu ul li a
+{
+	display:block;
+	color:black;
+	text-decoration:none;
+	font-size:18px;
+	width:120px;
+	font-family:Arial, Helvetica, sans-serif;
+	height:44px;
+	text-align:center;
+	line-height:44px;
+	background-color:#FFF;
+	
+	
+}
+.menu ul li a:hover
+{
+	background-color:#f49140;
+	
+	color:white;
+	
+}
+#calismazaman {
+	position: absolute;
+	width: 300px;
+	height: 254px;
+	z-index: 1;
+	left: 9px;
+	top: 9px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.zz
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+}
+#calismazaman2 {
+	position: absolute;
+	width: 300px;
+	height: 254px;
+	z-index: 2;
+	left: 337px;
+	top: 9px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#calismazaman3 {
+	position: absolute;
+	width: 381px;
+	height: 254px;
+	z-index: 3;
+	left: 661px;
+	top: 9px;
+}
+#sosyalmedya {
+	position: absolute;
+	width: 290px;
+	height: 254px;
+	z-index: 4;
+	left: 1054px;
+	top: 9px;
+}
+#kapsayici #icerik #footer2 #sosyalmedya table tr td center a .fab.fa-instagram.fa-2x {
+	color: #F00;
+}
+#kapsayici #icerik #footer2 #sosyalmedya table tr td center a .fab.fa-twitter.fa-2x {
+	color:lightblue;
+}
+#giris {
+	position: absolute;
+	width: 600px;
+	height: 41px;
+	z-index: 2;
+	left: 70%;
+	top: 8px;
+}
+#kapsayici .ustbanner #giris a {
+	color:#f49140;
+	text-decoration: none;
+	font-weight:bold;
+}
+#calismazaman {
+	color: #FFF;
+}
+#calismazaman2 {
+	color: #FFF;
+}
+#calismazaman3 {
+	color: #FFF;
+}
+#sosyalmedya {
+	color: #FFF;
+}
+#apDiv1 {
+	position: relative;
+	width: 200px;
+	height: 300px;
+	z-index: 2;
+}
+.aratext
+{
+    width:250px;
+    height:40px;
+    border-radius:5px;
+}
+</style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+  <form id="form1" runat="server">       
+       
+<div id="kapsayici">
+  <div class="ustbanner">
+    <div class="logo"><img src="../images/ayakk.png" width="170" height="124" />&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/bilgi.fw.png" width="270" height="139" /></div>
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    
+          <div class="menu">
+              <ul>
+                  <li><a href="index.aspx" style="width:50px;"><i class="fas fa-home fa-2x"></i></a></li>
+                  <li><a href="kadin.aspx">Kadın</a></li>
+                  <li><a href="erkek.aspx">Erkek</a></li>
+                  <li><a href="cocuk.aspx">Çocuk</a></li>
+                  <li><a href="spor.aspx">Spor</a></li>
+                  <li><a href="hak.aspx">Hakkımızda</a></li>
+                  <li><a href="iletisim.aspx">İletişim</a></li>
+              </ul>
+          </div>
+      </asp:ContentPlaceHolder>
+      <div style="position:absolute; top: 20px; left: 580px; z-index:999;">
+          <asp:TextBox ID="TextBox1" runat="server" CssClass="aratext"></asp:TextBox><asp:Button ID="Button1" runat="server" Text="Ara" Width="100" Height="40" OnClick="Button1_Click" /></div>
+    <div id="giris"> <asp:Label ID="Label4" runat="server" Text="" ForeColor="#f49140" Font-Bold="true"></asp:Label><a href="login.aspx">
+        <asp:Label ID="Label1" runat="server" Text="Üye Girişi"></asp:Label></a> / <a href="login.aspx">
+            <asp:Label ID="Label2" runat="server" Text="Üye Ol"></asp:Label></a> <asp:Label ID="Label3" runat="server" Text="(0) Sepetim (0,00 TL)"></asp:Label>
+        <asp:Button ID="kapat" runat="server" Text="Oturumu Kapat" BorderStyle="Solid" BorderWidth="2px" BorderColor="#F49140" OnClick="kapat_Click" />
+       
+    </div>
+  </div>
+     
+  <div id="icerik">
+   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> 
+       <div id="kate">
+           <ul>
+               <li><a href="#" style="background-color:#000; color:#FFF;">Kategoriler</a></li>
+               <li><a href="topuklu.aspx" style=" background-color:#f49140;color:#FFF;">Topuklu Ayakkabı</a></li>
+               <li><a href="spor.aspx">Spor Ayakkabı</a></li>
+               <li><a href="babet.aspx">Babet</a></li>
+               <li><a href="sandalet-terlik.aspx">Sandalet / Terlik</a></li>
+               <li><a href="bot.aspx">Bot</a></li>
+               <li><a href="nike.aspx">Nike</a></li>
+               <li><a href="adidas.aspx">Adidas</a></li>
+               <li><a href="puma.aspx">Puma</a></li>
+               <li><a href="lescon.aspx">Lescon</a></li>
+               <li><a href="reebook.aspx">Reebook</a></li>
+               <li><a href="kinetix.aspx">Kinetix</a></li>
+           </ul>
+       </div>
+      </asp:ContentPlaceHolder>
+    <div id="icerik2"></div>
+
+    
+    <div id="footer2">
+    <div id="calismazaman"><span class="zz">Çalışma Zamanları</span><hr color="#FF0000" />
+      <table width="265" border="0" cellspacing="10">
+        <tr>
+          <td width="132">Pazartesi - Pazar</td>
+          <td width="99">10:00 - 22:00</td>
+        </tr>
+      </table>
+      <br />
+    </div>
+    <div id="calismazaman2"><span class="zz">Adres</span><hr color="#FF0000" />
+    
+    <table width="200" border="0" cellspacing="10">
+  <tr>
+    <td>Uygun Ticaret</td>
+  </tr>
+  <tr>
+    <td>Aksaray Mah. No:33/A</td>
+  </tr>
+  <tr>
+    <td>31000 Antakya - Hatay</td>
+  </tr>
+  <tr>
+    <td>Türkiye</td>
+  </tr>
+  <tr>
+    <td>0212 854 38 55</td>
+  </tr>
+  <tr>
+    <td>Google Maps</td>
+  </tr>
+</table>
+
+    
+    </div>
+	
+    <div id="calismazaman3"><span class="zz">Center Uygulamasını İndir</span><hr color="#FF0000" />
+      <table width="364" border="0" cellspacing="10">
+        <tr>
+          <td><img src="../images/google-play.png" width="165" height="46" /></td>
+          <td><img src="../images/Ekran Alıntısı.PNG" width="165" height="46" /></td>
+        </tr>
+      </table>
+    </div>
+    <div id="sosyalmedya"><span class="zz">Sosyal Medyass="zz">Sosyal Medya</span><hr color="#FF0000" />
+    <table width="94" border="0" cellspacing="0">
+  <tr>
+    <td width="20"><center><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></center></td>
+    <td width="22"><center><a href="#"><i class="fab fa-instagram fa-2x"></i></a></center></td>
+    <td width="29"><center><a href="#"><i class="fab fa-twitter fa-2x"></i></a></center></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+        </div>
+        </div>
+<div id="footer">Uygun Ticaret &copy; Tüm Hakları Saklıdır.</div>
+     
+  </div>
+
+  <br />
+</div>
+     
+    </form>
+</body>
+</html>

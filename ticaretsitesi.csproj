@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23AED12A-F456-4D34-A4E4-244BCB0CD46D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ticaretsitesi</RootNamespace>
+    <AssemblyName>ticaretsitesi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adidas.aspx" />
+    <Content Include="admin\admingiris.aspx" />
+    <Content Include="admin\images\Aha-Soft-Free-Large-Boss-Admin.ico" />
+    <Content Include="admin\images\bg.png" />
+    <Content Include="admin\images\girisyap.png" />
+    <Content Include="admin\images\hata.png" />
+    <Content Include="admin\images\kull.png" />
+    <Content Include="admin\images\mainbg.png" />
+    <Content Include="admin\images\sifre.png" />
+    <Content Include="admin\siparisler.aspx" />
+    <Content Include="admin\topuk.aspx" />
+    <Content Include="admin\spor.aspx" />
+    <Content Include="admin\sandalet.aspx" />
+    <Content Include="admin\reebook.aspx" />
+    <Content Include="admin\puma.aspx" />
+    <Content Include="admin\nike.aspx" />
+    <Content Include="admin\lescon.aspx" />
+    <Content Include="admin\kinetix.aspx" />
+    <Content Include="admin\kadinayakkabi.aspx" />
+    <Content Include="admin\erkekayakkabi.aspx" />
+    <Content Include="admin\botlar.aspx" />
+    <Content Include="admin\cocukayakkabi.aspx" />
+    <Content Include="admin\babet.aspx" />
+    <Content Include="admin\adidas.aspx" />
+    <Content Include="admin\style.css" />
+    <Content Include="admin\uyeislem.aspx" />
+    <Content Include="ara.aspx" />
+    <Content Include="babet.aspx" />
+    <Content Include="bot.aspx" />
+    <Content Include="cocuk.aspx" />
+    <Content Include="erkek.aspx" />
+    <Content Include="ayrinti.aspx" />
+    <Content Include="hak.aspx" />
+    <Content Include="iletisim.aspx" />
+    <Content Include="images\bg.png" />
+    <Content Include="images\girisyap.png" />
+    <Content Include="images\hata.png" />
+    <Content Include="images\mainbg.png" />
+    <Content Include="images\shopping-cart-clip-art_f.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="kadin.aspx" />
+    <Content Include="kinetix.aspx" />
+    <Content Include="kullanicisablon.Master" />
+    <Content Include="admin\adminsablon.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\ayakkabi.mdb" />
+    <Content Include="images\Aha-Soft-Free-Large-Boss-Admin.ico" />
+    <Content Include="images\ayakk.png" />
+    <Content Include="images\babet.PNG" />
+    <Content Include="images\babet2.PNG" />
+    <Content Include="images\babet3.PNG" />
+    <Content Include="images\bilgi.fw.png" />
+    <Content Include="images\bilgi.png" />
+    <Content Include="images\bot1.PNG" />
+    <Content Include="images\bot2.PNG" />
+    <Content Include="images\bot3.PNG" />
+    <Content Include="images\canta.PNG" />
+    <Content Include="images\cocukayakkabi.PNG" />
+    <Content Include="images\cocukayakkabi2.PNG" />
+    <Content Include="images\cocukayakkabi3.PNG" />
+    <Content Include="images\cocukayakkabi4.PNG" />
+    <Content Include="images\cocukayakkabi5.PNG" />
+    <Content Include="images\cocukayakkabi6.PNG" />
+    <Content Include="images\cocukayakkabi7.PNG" />
+    <Content Include="images\cocukayakkabi8.PNG" />
+    <Content Include="images\Ekran Alıntısı.PNG" />
+    <Content Include="images\erkekayakkabi.PNG" />
+    <Content Include="images\erkekayakkabi2.PNG" />
+    <Content Include="images\erkekayakkabi3.PNG" />
+    <Content Include="images\erkekayakkabi4.PNG" />
+    <Content Include="images\erkekayakkabi5.PNG" />
+    <Content Include="images\erkekayakkabi6.PNG" />
+    <Content Include="images\erkekayakkabi7.PNG" />
+    <Content Include="images\erkekayakkabi8.PNG" />
+    <Content Include="images\erkekayakkabi9.PNG" />
+    <Content Include="images\google-play.png" />
+    <Content Include="images\kadinayakkabi.PNG" />
+    <Content Include="images\kadinayakkabi10.PNG" />
+    <Content Include="images\kadinayakkabi11.PNG" />
+    <Content Include="images\kadinayakkabi12.PNG" />
+    <Content Include="images\kadinayakkabi13.PNG" />
+    <Content Include="images\kadinayakkabi14.PNG" />
+    <Content Include="images\kadinayakkabi15.PNG" />
+    <Content Include="images\kadinayakkabi16.PNG" />
+    <Content Include="images\kadinayakkabi17.PNG" />
+    <Content Include="images\kadinayakkabi2.PNG" />
+    <Content Include="images\kadinayakkabi3.PNG" />
+    <Content Include="images\kadinayakkabi4.PNG" />
+    <Content Include="images\kadinayakkabi5.PNG" />
+    <Content Include="images\kadinayakkabi6.PNG" />
+    <Content Include="images\kadinayakkabi7.PNG" />
+    <Content Include="images\kadinayakkabi8.PNG" />
+    <Content Include="images\kadinayakkabi9.PNG" />
+    <Content Include="images\logo.ico" />
+    <Content Include="images\logo2.fw.png" />
+    <Content Include="images\logo2.ico" />
+    <Content Include="images\magaza.PNG" />
+    <Content Include="images\markalar.PNG" />
+    <Content Include="images\nike1.PNG" />
+    <Content Include="images\nike2.PNG" />
+    <Content Include="images\nike3.PNG" />
+    <Content Include="images\satinal.PNG" />
+    <Content Include="images\sporayakkabi.PNG" />
+    <Content Include="images\sporayakkabi2.PNG" />
+    <Content Include="images\sporayakkabi3.PNG" />
+    <Content Include="images\terlik.PNG" />
+    <Content Include="images\terlik2.PNG" />
+    <Content Include="images\terlik3.PNG" />
+    <Content Include="images\topuk.PNG" />
+    <Content Include="images\topuk2.PNG" />
+    <Content Include="images\topuk3.PNG" />
+    <Content Include="lescon.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="nike.aspx" />
+    <Content Include="puma.aspx" />
+    <Content Include="reebook.aspx" />
+    <Content Include="sandalet-terlik.aspx" />
+    <Content Include="satinalindi.aspx" />
+    <Content Include="spor.aspx" />
+    <Content Include="topuklu.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adidas.aspx.cs">
+      <DependentUpon>adidas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adidas.aspx.designer.cs">
+      <DependentUpon>adidas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admingiris.aspx.cs">
+      <DependentUpon>admingiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admingiris.aspx.designer.cs">
+      <DependentUpon>admingiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\siparisler.aspx.cs">
+      <DependentUpon>siparisler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\siparisler.aspx.designer.cs">
+      <DependentUpon>siparisler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\topuk.aspx.cs">
+      <DependentUpon>topuk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\topuk.aspx.designer.cs">
+      <DependentUpon>topuk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\spor.aspx.cs">
+      <DependentUpon>spor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\spor.aspx.designer.cs">
+      <DependentUpon>spor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\sandalet.aspx.cs">
+      <DependentUpon>sandalet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\sandalet.aspx.designer.cs">
+      <DependentUpon>sandalet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\reebook.aspx.cs">
+      <DependentUpon>reebook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\reebook.aspx.designer.cs">
+      <DependentUpon>reebook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\puma.aspx.cs">
+      <DependentUpon>puma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\puma.aspx.designer.cs">
+      <DependentUpon>puma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\nike.aspx.cs">
+      <DependentUpon>nike.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\nike.aspx.designer.cs">
+      <DependentUpon>nike.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\lescon.aspx.cs">
+      <DependentUpon>lescon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\lescon.aspx.designer.cs">
+      <DependentUpon>lescon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\kinetix.aspx.cs">
+      <DependentUpon>kinetix.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\kinetix.aspx.designer.cs">
+      <DependentUpon>kinetix.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\kadinayakkabi.aspx.cs">
+      <DependentUpon>kadinayakkabi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\kadinayakkabi.aspx.designer.cs">
+      <DependentUpon>kadinayakkabi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\erkekayakkabi.aspx.cs">
+      <DependentUpon>erkekayakkabi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\erkekayakkabi.aspx.designer.cs">
+      <DependentUpon>erkekayakkabi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\botlar.aspx.cs">
+      <DependentUpon>botlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\botlar.aspx.designer.cs">
+      <DependentUpon>botlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\cocukayakkabi.aspx.cs">
+      <DependentUpon>cocukayakkabi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\cocukayakkabi.aspx.designer.cs">
+      <DependentUpon>cocukayakkabi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\babet.aspx.cs">
+      <DependentUpon>babet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\babet.aspx.designer.cs">
+      <DependentUpon>babet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adidas.aspx.cs">
+      <DependentUpon>adidas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adidas.aspx.designer.cs">
+      <DependentUpon>adidas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminsablon.Master.cs">
+      <DependentUpon>adminsablon.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminsablon.Master.designer.cs">
+      <DependentUpon>adminsablon.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\uyeislem.aspx.cs">
+      <DependentUpon>uyeislem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\uyeislem.aspx.designer.cs">
+      <DependentUpon>uyeislem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ara.aspx.cs">
+      <DependentUpon>ara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ara.aspx.designer.cs">
+      <DependentUpon>ara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="babet.aspx.cs">
+      <DependentUpon>babet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="babet.aspx.designer.cs">
+      <DependentUpon>babet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bot.aspx.cs">
+      <DependentUpon>bot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bot.aspx.designer.cs">
+      <DependentUpon>bot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cocuk.aspx.cs">
+      <DependentUpon>cocuk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cocuk.aspx.designer.cs">
+      <DependentUpon>cocuk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="erkek.aspx.cs">
+      <DependentUpon>erkek.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="erkek.aspx.designer.cs">
+      <DependentUpon>erkek.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ayrinti.aspx.cs">
+      <DependentUpon>ayrinti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ayrinti.aspx.designer.cs">
+      <DependentUpon>ayrinti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hak.aspx.cs">
+      <DependentUpon>hak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hak.aspx.designer.cs">
+      <DependentUpon>hak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iletisim.aspx.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iletisim.aspx.designer.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kadin.aspx.cs">
+      <DependentUpon>kadin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kadin.aspx.designer.cs">
+      <DependentUpon>kadin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kinetix.aspx.cs">
+      <DependentUpon>kinetix.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kinetix.aspx.designer.cs">
+      <DependentUpon>kinetix.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicisablon.Master.cs">
+      <DependentUpon>kullanicisablon.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanicisablon.Master.designer.cs">
+      <DependentUpon>kullanicisablon.Master</DependentUpon>
+    </Compile>
+    <Compile Include="lescon.aspx.cs">
+      <DependentUpon>lescon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lescon.aspx.designer.cs">
+      <DependentUpon>lescon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nike.aspx.cs">
+      <DependentUpon>nike.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nike.aspx.designer.cs">
+      <DependentUpon>nike.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="puma.aspx.cs">
+      <DependentUpon>puma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="puma.aspx.designer.cs">
+      <DependentUpon>puma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reebook.aspx.cs">
+      <DependentUpon>reebook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reebook.aspx.designer.cs">
+      <DependentUpon>reebook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sandalet-terlik.aspx.cs">
+      <DependentUpon>sandalet-terlik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sandalet-terlik.aspx.designer.cs">
+      <DependentUpon>sandalet-terlik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="satinalindi.aspx.cs">
+      <DependentUpon>satinalindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="satinalindi.aspx.designer.cs">
+      <DependentUpon>satinalindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="spor.aspx.cs">
+      <DependentUpon>spor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="spor.aspx.designer.cs">
+      <DependentUpon>spor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="topuklu.aspx.cs">
+      <DependentUpon>topuklu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="topuklu.aspx.designer.cs">
+      <DependentUpon>topuklu.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49596</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49596/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
