@@ -1,0 +1,160 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminsablon.master.cs" Inherits="ticaretsitesi.admin.adminsablon" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Şablon</title>
+    <style type="text/css">
+*
+{
+	font-family:Arial, Helvetica, sans-serif;
+	padding:0px;
+	margin:0px;
+}
+#kapsayici {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	z-index: 1;
+}
+#ustbanner {
+	position: absolute;
+	width: 100%;
+	height: 115px;
+	z-index: 1;
+	background-color: #FFFF00;
+	font-size:70px;
+	text-align:center;
+	line-height:115px;
+}
+#menu {
+	position: absolute;
+	width: 100%;
+	height: 45px;
+	z-index: 100;
+	left: 0px;
+	top: 115px;
+	background-color: brown;
+	border-bottom: 1px solid black;
+	
+}
+#icerik2 {
+	position: relative;
+	width: 90%;
+	height: auto;
+	z-index: 2;
+	top: 27px;
+	background-color: #FFFFFF;
+	margin: auto;
+	border:1px solid #CCC;
+
+}
+#menu ul
+{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+	width:100%;
+}
+#menu ul li
+{
+	float:left;
+	
+}
+#menu ul li a
+{
+	display:block;
+	width:120px;
+	height:45px;
+	color:lightblue;
+	background-color:brown;
+	text-decoration:none;
+	text-align:center;
+	line-height:45px;
+	
+}
+#menu ul li a:hover
+{
+	background-color:#000;
+	color:#FFF;
+}
+#menu ul li ul
+{
+	position:absolute;
+	width:120px;
+	display:none;
+}
+#menu ul li:hover ul
+{
+	display:block;
+}
+#icerik {
+	position:relative;
+	width: 100%;
+	height: 600px;
+	z-index: 0;
+	top: 160px;
+	left: 0px;
+	background-color: #9999FF;
+}
+a
+{
+	text-decoration:none;
+}
+#kapat {
+	position: absolute;
+	width: 278px;
+	height: 88px;
+	z-index: 2;
+	left: 1079px;
+	top: 1px;
+}
+</style>
+    <link rel="shortcut icon" href="../images/Aha-Soft-Free-Large-Boss-Admin.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div id="kapsayici">
+  <div id="ustbanner">Yönetim Paneli
+    <div id="kapat">
+        <asp:Button ID="Button1" runat="server" Text="Oturum Kapat" OnClick="Button1_Click" /></div>
+  </div>
+  <div id="menu">
+    <ul>
+     
+      <li><a href="uyeislem.aspx">Üye İşlemleri</a>
+      <ul>
+      <li><a href="siparisler.aspx">Gelen Siparişler</a></li>
+      </ul>
+      </li>
+      <li><a href="#">Ayakkabı Çeş.</a>
+      <ul>
+      <li><a href="spor.aspx">Spor Ayakkabı</a></li>
+      <li><a href="topuk.aspx">Topuklu Ayak.</a></li>
+      <li><a href="babet.aspx">Babet</a></li>
+      <li><a href="sandalet.aspx">Sandaletler</a></li>
+          <li><a href="botlar.aspx">Botlar</a></li>
+      </ul>
+      </li>
+      <li><a href="nike.aspx">Nike</a></li>
+      <li><a href="adidas.aspx">Adidas</a></li>
+      <li><a href="kinetix.aspx">Kinetix</a></li>
+      <li><a href="reebook.aspx">Reebook</a></li>
+      <li><a href="lescon.aspx">Lescon</a></li>
+      <li><a href="puma.aspx">Puma</a></li>
+      <li><a href="kadinayakkabi.aspx">Kadın</a></li>
+      <li><a href="erkekayakkabi.aspx">Erkek</a></li>
+      <li><a href="cocukayakkabi.aspx">Çocuk</a></li>
+    </ul>
+  </div>
+
+  <div id="icerik"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></div>
+</div>
+       
+    
+    </form>
+</body>
+</html>
